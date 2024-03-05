@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.container {
+    padding: 91px 124px;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+}
+.p-img {
+    max-width: 662px;
+    min-height: 374px;
+}
+.article {
+    width: 100%;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.article h1 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    width: 365px;
+    height: 93px;
+}
+.article p {
+    font-size: 24px;
+    font-weight: 400;
+}
+.first-p {
+    margin-bottom: 45px;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+.first-photo {
+    height: 315px;
+    width: 314px;
+}
+.second-photo {
+    width: 232px;
+    height: 203px;
+}
+.paragraph h2, .paragraph p{
+    width: 150px;
+    height: 39px;
+}
+.mright {
+    margin-right: 80px;
+}
+@media screen and (min-width: 375px) and (max-width: 751px) {
+    .center {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .article {
+        width: 100%;
+    }
+    .footer-img , .second-photo{
+        display: none;
+    }
+    .mright {
+        margin-right: 0;
+    }
+    .paragraph {
+        margin-right: 50px;
+        margin-bottom: 20px;
+    }
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main {
+        margin-bottom: 100px;
+    }
+    .container {
+        padding: 25px 35px;
+    }
+}
+
+@media screen and (min-width: 752px) and (max-width: 1003px){
+    .footer-img , .second-photo{
+        display: none;
+    }
+    .mright {
+        margin-right: 0;
+    }
+    .paragraph {
+        margin-right: 50px;
+        margin-top: 70px;
+    }
+    .main {
+        margin-bottom: 100px;
+    }
+    .container {
+        padding: 45px 65px;
+    }
+}
